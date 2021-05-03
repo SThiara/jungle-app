@@ -1,3 +1,6 @@
+<% if enhanced_cart.length == 0 %>
+Cart is empty! Click the <%= link_to 'Home', :root %> link to return to the main page!
+<% else %>
 <section class="cart-show">
 
   <header class="page-header">
@@ -50,3 +53,4 @@
   </div>
 
 </section>
+<% end %>
